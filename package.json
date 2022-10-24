@@ -1,0 +1,21 @@
+{
+  "name": "public-ip-fetch",
+  "version": "1.0.0",
+  "description": "Public IP lookup zero external dependencies",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "type": "module",
+  "keywords": [
+    "public",
+    "ip",
+    "light",
+    "simple"
+  ],
+  "author": "Rod Howard",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.2.1"
+  }
+}
