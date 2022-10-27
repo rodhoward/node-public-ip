@@ -1,6 +1,6 @@
 {
   "name": "node-public-ip",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Lookup you're public IP address via DNS service. Fast! Super light weight zero external dependencies.",
   "main": "index.js",
   "scripts": {},
