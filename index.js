@@ -1,14 +1,23 @@
 import { Resolver } from "node:dns/promises";
 
 /**
+ * @typedef {Object} Options
+ * @property {array} servers - Array of server IP addresses
+ * @property {string} hostname - The hostname of the dns service. Defaults to "myip.opendns.com"
+ * @property {integer} timeoutMs - Resolver timeout in milliseconds
+ * @property {integer} triesPerServer - Resolver tries before trying the next server IP address
+ * @property {function} resultTransform - Takes the DNS result and tries to convert it to a single IP address string
+ */
+
+/**
  * publicIp uses nodes DNS resolver and services like "myip.opendns.com" to return you're public IP address.
- * @constructor
- * @param {object} options - Configuration for the DNS resolver.
- * @param {array} options.servers - Array of server IP addresses.
- * @param {string} options.hostname - The hostname of the dns service. Defaults to "myip.opendns.com"
- * @param {integer} options.timeoutMs - Resolver timeout in milliseconds.
- * @param {integer} options.triesPerServer - Resolver tries before trying the next server IP address.
- * @param {function} options.resultTransform - Takes the DNS result and tries to convert it to a single IP address string.
+ * @param {Options} config - Configuration for the DNS resolver
+ * @param {array} config.servers - Array of server IP addresses
+ * @param {string} config.hostname - The hostname of the dns service. Defaults to "myip.opendns.com"
+ * @param {integer} config.timeoutMs - Resolver timeout in milliseconds
+ * @param {integer} config.triesPerServer - Resolver tries before trying the next server IP address
+ * @param {function} config.resultTransform - Takes the DNS result and tries to convert it to a single IP address string
+ * @returns {Promise} You're public IP address string.
  */
 const publicIp = ({
   servers = [

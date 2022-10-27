@@ -10,10 +10,21 @@ npm install node-public-ip
 
 ## Usage
 
+### es6 Modules
+
 ```js
 import { publicIp } from "node-public-ip";
 
 console.log(await publicIp());
+//=> "12.133.141.187"
+```
+
+### CommonJS
+
+```js
+import("node-public-ip").then(async ({ publicIp }) => {
+  console.log(await publicIp());
+});
 //=> "12.133.141.187"
 ```
 
