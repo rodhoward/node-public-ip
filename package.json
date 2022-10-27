@@ -1,7 +1,7 @@
 {
-  "name": "public-ip-fetch",
+  "name": "node-public-ip",
   "version": "1.0.0",
-  "description": "Public IP lookup zero external dependencies",
+  "description": "Lookup you're public IP address via DNS service. Fast! Super light weight zero external dependencies.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -14,8 +14,7 @@
     "simple"
   ],
   "author": "Rod Howard",
-  "license": "ISC",
-  "devDependencies": {
-    "jest": "^29.2.1"
-  }
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
 }
