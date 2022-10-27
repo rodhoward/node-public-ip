@@ -3,18 +3,21 @@
   "version": "1.0.1",
   "description": "Lookup you're public IP address via DNS service. Fast! Super light weight zero external dependencies.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "scripts": {},
   "type": "module",
   "keywords": [
     "public",
+    "dns",
     "ip",
-    "light",
-    "simple"
+    "ipv4",
+    "ipv6"
   ],
   "author": "Rod Howard",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rodhoward/node-public-ip.git"
+  },
   "devDependencies": {},
   "dependencies": {}
 }
