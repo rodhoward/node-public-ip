@@ -43,7 +43,7 @@ Type: `object`
 Type: `array of ipAddress`\
 Default: `[ "208.67.222.222", "208.67.220.220", "208.67.222.220", "208.67.220.222" ]`
 
-This sets the server IP addresses used in the DNS resolver. It is overridden in the Ipv6 method to be `["2620:0:ccc::2", "2620:0:ccd::2"]`.
+This sets the server IP addresses used in the DNS resolver.
 
 ##### hostname
 
